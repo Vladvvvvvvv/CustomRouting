@@ -15,6 +15,6 @@ public struct AnyDestination: Hashable{
     }
     
     public static func == (lhs: AnyDestination, rhs: AnyDestination) -> Bool {
-        lhs.id == rhs.id
+        lhs.hashValue == rhs.hashValue
     }
 }
